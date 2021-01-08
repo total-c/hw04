@@ -12,13 +12,19 @@ dict_1 = {
     'ruble': 'rub'
 }
 
-keys_dict_1 = list(dict_1.keys())
+keys_list = list(dict_1.keys())
 i = 0
-len_keys_dict_1 = len(keys_dict_1)
+len_keys_list = len(keys_list)
 
-while i < len_keys_dict_1:
-    new_key = f'{keys_dict_1[i]}{len(keys_dict_1[i])}'
-    dict_1[new_key] = dict_1.pop(keys_dict_1[i])
+while i < len_keys_list:
+    new_key = f'{keys_list[i]}{len(keys_list[i])}'
+    dict_1[new_key] = dict_1.pop(keys_list[i])
     i += 1
+
+print(dict_1)
+
+for key in keys_list:
+    new_key_for = f'{key}{len(key)}'
+    dict_1[new_key_for] = dict_1.pop(key)
 
 print(dict_1)
