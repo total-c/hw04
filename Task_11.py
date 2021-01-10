@@ -11,3 +11,10 @@ while i < dlina:
         count_chetn += 1
 
 print(count_chetn)
+
+count_chetn_for = 0
+for item in a:
+    if item % 2 == 0:
+        count_chetn_for += 1
+
+print(count_chetn_for)        

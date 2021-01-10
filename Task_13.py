@@ -11,3 +11,9 @@ while i < len_list_1:
     i = i + 1
 list_2.append(list_1[0])
 print(list_2)
+
+list_2_for = []
+for item in list_1:
+    list_2_for.append(list_1[1])
+list_2_for.append(list_1[0])
+print(list_2)
